@@ -11,8 +11,8 @@ spec:
     path: charts/argo-cd
     targetRevision: HEAD
   destination:
-    server: https://kubernetes.default.svc
-    namespace: default
+    server: in-cluster
+    namespace: argocd
   syncPolicy:
     automated:
       selfHeal: true
